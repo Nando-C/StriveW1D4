@@ -147,8 +147,8 @@ const upperFirst = function (string) {
     for(i=1; i<string.length; i++){
         newString += string.charAt([i])
     }
-
     console.log(newString)
+    return newString
 }
 
 /********************************************************** */
@@ -158,6 +158,12 @@ Write a function "cutString" to create a new string without the first and last c
 */
 
 /* WRITE YOUR CODE HERE */
+
+const cutString = function(string) {
+    let cut = string.slice(1, string.length - 1)
+    console.log(cut)
+    return cut
+}
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
